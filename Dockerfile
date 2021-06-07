@@ -4,4 +4,4 @@ COPY . /app
 WORKDIR /app/src
 # RUN  go mod init
 RUN go build -o src/main .
-CMD ["app/src/main"]
+CMD ["/src/main.go"]
