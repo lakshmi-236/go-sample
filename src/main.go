@@ -66,7 +66,7 @@ func handleRequests() {
 	myRouter.HandleFunc("/book", createNewBook).Methods("POST")
 	myRouter.HandleFunc("/book/{id}", deleteBook).Methods("DELETE")
 	myRouter.HandleFunc("/book/{id}", getBookById)
-	log.Fatal(http.ListenAndServe(":8082", myRouter))
+	log.Fatal(http.ListenAndServe(":8080", myRouter))
 }
 
 func main() {
